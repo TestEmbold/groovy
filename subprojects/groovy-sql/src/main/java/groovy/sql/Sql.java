@@ -3407,7 +3407,7 @@ public class Sql implements AutoCloseable {
      */
     public void commit() throws SQLException {
         if (useConnection == null) {
-            LOG.info("Commit operation not supported when using datasets unless using withTransaction or cacheConnection - attempt to commit ignored");
+            LOG.error("Commit operation not supported when using datasets unless using withTransaction or cacheConnection - attempt to commit ignored");
             return;
         }
         try {
