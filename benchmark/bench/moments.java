@@ -4,7 +4,7 @@
 import java.io.*;
 import java.util.*;
 import java.text.*;
-import java.lang.Math;
+//import java.lang.Math;
 
 public class moments {
     public static void main(String[] args) {
