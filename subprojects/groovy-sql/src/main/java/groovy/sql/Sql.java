@@ -4486,7 +4486,7 @@ public class Sql implements AutoCloseable {
                 // It's normally safe to ignore exceptions during cleanup but here if there is
                 // a closed statement in the cache, the cache is possibly corrupted, hence log
                 // at slightly elevated level than similar cases.
-                LOG.error("Failed to close statement. Already closed? Exception message: " + e.getMessage());
+                LOG.info("Failed to close statement. Already closed? Exception message: " + e.getMessage());
             }
         }
     }
